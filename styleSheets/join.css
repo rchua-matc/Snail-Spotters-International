@@ -1,0 +1,42 @@
+/*
+    Ryan Chua
+    11/24/2020
+*/
+
+main img {
+    float: right;
+    width: 40%;
+    max-width: 300px;
+    box-shadow: 0 0 1em;
+    margin: 0 1.5em 1em 1.5em;
+}
+
+img#mug {
+    float: left;
+}
+
+section h2 {
+    clear: both;
+}
+
+fieldset p {
+    font-size: small;
+    text-align: center;
+}
+
+form {
+    clear: both;
+}
+
+@media screen and (max-width: 73.75em) {
+    main img {
+        float: none;
+        display: block;
+        margin: 0 auto 1em auto;
+        width: 80%;
+    }
+
+    img#mug {
+        float: none;
+    }
+}

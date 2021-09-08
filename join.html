@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+    Author: Ryan Chua
+    Date: 11/24/2020
+-->
+<html lang="en">
+
+<head>
+    <title>Snail Spotters International</title>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/join.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="headerLogo">
+            <a href="index.html" id="logoImage"><img src="images/logoBlack.svg" alt="Snail Spotters International"></a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="information.html">Learn More</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="socialIcons">
+            <img src="images/facebookLogo.png" alt="Facebook">
+            <img src="images/twitterLogo.png" alt="Twitter">
+            <img src="images/instagramLogo.png" alt="Instagram">
+        </div>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Become A Spotter</h2>
+            <img src="images/spottedCover.png" alt="Spotted!">
+            <p>Interested in joining Snail Spotters International? Fill out the form below and you'll be contacted by the chapter of your choice with more information about benefits, fees, and the initiation ritual.</p>
+            <p>Members of Snail Spotters International get exclusive access to monthly issues of our newsletter, <span class="italics">Spotted!</span>. New members automatically receive their choice of Snail Spotters International introductory merchandise (iron-on logo patch, snail keychain, "Snail Spotter" vanity license plate frame, or coffee mug) as well as the ability to recruit new distributors to our merchandising network.</p>
+            <img id="mug" src="images/snailMug2.jpg" alt="Snail Spotters Mug">
+            <p>Upon joining, you'll receive a unique referral code to give when recruiting new Snail Spotters affiliates. You earn a portrion of each sale made by recruits downline of you while paying a small annual fee based on performance.</p>
+            <p>As a member, you'll also be able to participate in your chapter's educational seminars, where you can help spread the word about the Iowa Pleistocene snail and the benefits of becoming a Snail Spotter affiliate member. We also recommend hosting "snail parties" for friends and family to learn more about the endangered snail. Snail parties are also a great place to sell the Snail Spotters International Affiliate Starter Kit&trade; to create new levels of our marketing team.</p>
+        </section>
+
+        <section>
+            <h2>Join Us</h2>
+            <form name="joinForm"
+              action="http://itins3.madisoncollege.edu/echo.php"
+              method="post">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state">
+                <label for="zipCode">Zip Code</label>
+                <input type="text" id="zipCode" name="zipCode">
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country">
+                <label for="chapter">Snail Spotters Chapter</label>
+                <select id="chapter" name="chapter">
+                    <optgroup label="Australia">
+                        <option value="toowoomba">Toowoomba</option>
+                        <option value="waggaWagga">Wagga Wagga</option>
+                    </optgroup>
+                    <optgroup label="Canada">
+                        <option value="saskatoon">Saskatoon</option>
+                        <option value="thunderBay">Thunder Bay</option>
+                    </optgroup>
+                    <option value="potsdam">Potsdam, Germany</option>
+                    <option value="obihiro">Obihiro, Japan</option>
+                    <option value="mahajanga">Mahajanga, Madagascar</option>
+                    <option value="oaxaca">Oaxaca, Mexico</option>
+                    <option value="punggol">Punggol, Singapore</option>
+                    <optgroup label="United States">
+                        <option value="phoenix">Phoenix, AZ</option>
+                        <option value="tallahassee">Tallahassee, FL</option>
+                        <option value="desMoines">Des Moines, IA</option>
+                        <option value="gary">Gary, IN</option>
+                        <option value="tulsa">Tulsa, OK</option>
+                        <option value="austin">Austin, TX</option>
+                    </optgroup>
+                    <option value="other" selected>Other</option>
+                </select>
+                <fieldset>
+                    <legend>Are you interested in founding a new chapter?</legend>
+                    <input type="radio" id="yes" value="yes" name="founder">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="no" value="no" name="founder">
+                    <label for="no">No</label>
+                </fieldset>
+                <label for="referralCode">Referral Code</label>
+                <input type="text" id="referralCode" name="referralCode">
+                <fieldset>
+                    <legend>Joining Bonus</legend>
+                    <p class="italics">Please note that a $20 fee will be added per item past the one free introductory gift.</p>
+                    <input type="checkbox" id="logoPatch" name="logoPatch" value="logoPatch">
+                    <label for="logoPatch">Logo Patch</label>
+                    <br>
+                    <input type="checkbox" id="keychain" name="keychain" value="keychain">
+                    <label for="keychain">Snail Keychain</label>
+                    <br>
+                    <input type="checkbox" id="licenseFrame" name="licenseFrame" value="licenseFrame">
+                    <label for="licenseFrame">License Plate Frame</label>
+                    <br>
+                    <input type="checkbox" id="snailMug" name="snailMug" value="snailMug">
+                    <label for="snailMug">Coffee Mug</label>
+                </fieldset>
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes"></textarea>
+
+                <div id="buttonContainer">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Clear">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <a href="index.html"><img src="images/logoWhite.svg" alt="Snail Spotters International" id="footerLogo"></a>
+
+        <div class="socialMedia">
+            <h3><span id="followUs">Follow Us</span></h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Learn More</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

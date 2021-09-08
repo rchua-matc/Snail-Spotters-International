@@ -1,0 +1,34 @@
+/*
+    Ryan Chua
+    11/24/2020
+*/
+
+main {
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+}
+
+td {
+    padding: .25em;
+    border-bottom: thin dashed lightgray;
+}
+
+main img {
+    display: block;
+    box-shadow: 0 0 1em lightgrey;
+    margin: 1em auto;
+}
+
+p {
+    text-align: left;
+}
+
+main li {
+    width: 50%;
+    margin: 0 auto;
+    list-style-type: none;
+}

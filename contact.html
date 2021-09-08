@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--
+    Author: Ryan Chua
+    Date: 11/24/2020
+-->
+<html lang="en">
+
+<head>
+    <title>Snail Spotters International</title>
+    <meta charset="UTF-8"  />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSheets/main.css">
+    <link rel="stylesheet" href="styleSheets/contact.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="headerLogo">
+            <a href="index.html" id="logoImage"><img src="images/logoBlack.svg" alt="Snail Spotters International"></a>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="information.html">Learn More</a>
+            <a href="join.html">Join</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="socialIcons">
+            <img src="images/facebookLogo.png" alt="Facebook">
+            <img src="images/twitterLogo.png" alt="Twitter">
+            <img src="images/instagramLogo.png" alt="Instagram">
+        </div>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>Spotted an Iowa Pleistocene snail? Have you seen a cool snail lately? Do you want to start a Snail Spotters chapter in your area? Questions, comments, or concerns? Leave us a message and we'll get back to you faster than a snail's pace.</p>
+        <p>Interested in getting involved? <a href="join.html">Click here</a> to learn more about becoming a member.</p>
+        <address>
+            Snail Spotters International<br>
+            878 Snail Hollow Dr.<br>
+            Fairview, UT 84629<br>
+            1 (801)-23-SNAIL<br>
+            spotters@snail.mail
+        </address>
+
+        <h2>Report A Sighting</h2>
+        <p id="slugNotice">Please note that we are not accepting reports of slug sightings at this time.</p>
+        <form name="reportASnail"
+          action="http://itins3.madisoncollege.edu/echo.php"
+          method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+
+            <fieldset>
+                <legend>Sighting Details (Optional)</legend>
+                <input type="radio" id="sighted" value="sighted" name="sightingOccurred">
+                <label for="sighted">Snail Spotted</label>
+                <br>
+                <input type="radio" id="noSighting" value="noSighting" name="sightingOccurred">
+                <label for="noSighting">No Sighting</label>
+                <fieldset>
+                    <legend>Did the gastropod have a shell?</legend>
+                    <input type="radio" id="shelled" value="shelled" name="shellStatus">
+                    <label for="shelled">Yes</label>
+                    <input type="radio" id="noShell" value="noShell" name="shellStatus" title="Please report only snail sightings." disabled>
+                    <label for="noShell">No</label>
+                </fieldset>
+            </fieldset>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <div id="buttonContainer">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <a href="index.html"><img src="images/logoWhite.svg" alt="Snail Spotters International" id="footerLogo"></a>
+
+        <div class="socialMedia">
+            <h3><span id="followUs">Follow Us</span></h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="information.html">Learn More</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+/*
+    Ryan Chua
+    11/24/2020
+*/
+
+address {
+    width: 50%;
+    margin: 1em auto;
+}
+
+p#slugNotice {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}

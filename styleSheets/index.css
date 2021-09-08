@@ -1,0 +1,109 @@
+/*
+    Ryan Chua
+    11/24/2020
+*/
+
+html, body {
+    height: 100%;
+}
+
+/*    Main Image Styling    */
+main {
+    width: 100%;
+    margin: 0;
+    padding-top: 5em;
+}
+
+.scrollingBackgroundOne {
+    background-image: url(../images/snailBlack1.jpg);
+    height: 53em;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 4em;
+    box-shadow: 0 0 3em black;
+    background-color: black;
+}
+
+.scrollingBackgroundOne h1 {
+    float: right;
+    padding: 2em;
+    animation-name: headingOne;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    cursor: default;
+}
+
+@keyframes headingOne {
+    from {
+        color: black;
+    }
+    to {
+        color: white;
+    }
+}
+
+/*    Content Styling    */
+.contentSection {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+}
+
+.contentSection h2 {
+    clear: right;
+}
+
+figure {
+    width: 60%;
+    max-width: 40em;
+    float: right;
+    margin: 0 1em;
+}
+
+figcaption {
+    clear: right;
+}
+
+figure img {
+    float: right;
+    max-width: 100%;
+    max-height: 25em;
+    box-shadow: 0 0 1em lightgray;
+}
+
+/*    Media Queries    */
+@media screen and (max-width: 43.75em) {
+    main {
+        padding-top: 0em;
+    }
+
+    .contentSection {
+        width: 90%;
+    }
+
+    .scrollingBackgroundOne {
+        background-image: url(../images/snailBlackSmall.jpg);
+        background-size: contain;
+        background-attachment: scroll;
+        height: 26em;
+        box-shadow: 0 0 0;
+        padding-top: 0;
+    }
+
+    .scrollingBackgroundOne h1 {
+        float: none;
+        margin: 0 auto;
+        padding: 3em 0.5em;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    figure {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
